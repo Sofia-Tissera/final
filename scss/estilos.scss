@@ -1,22 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
-@import 'hero';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;800&display=swap');
+@import 'ferlatti';
 @import 'header';
 @import 'media';
 @import 'animations';
+@import 'about';
+@import 'cami';
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }
+
 
 .container {
     width: 80%;
     margin: 2rem auto;
+
     p {
         margin: 1rem 0;
     }
