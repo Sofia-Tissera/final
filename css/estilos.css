@@ -133,7 +133,7 @@
     padding: 10rem 0;
     width: 100vw;
     height: 100vh;
-    font-size: 2rem;
+    font-size: 1.2rem;
     color: #000;
     background: #FCCDFF;
     transition: opacity .8s .5s, clip-path 1s .5s;
