@@ -644,7 +644,7 @@
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: img-sec2;
-  background-image: url(../img/animalcake.jpeg);
+  background-image: url(../img/animalcake.jpg);
 }
 
 .container-img .img-sec3 {
@@ -675,7 +675,8 @@
 
 .tt-2 {
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
+  font-weight: 400;
   margin-top: 80px;
 }
 
@@ -701,7 +702,7 @@
 
 .content-all .content-carrousel figure {
   width: 100%;
-  height: 180px;
+  height: auto;
   overflow: hidden;
   position: absolute;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.637);
@@ -822,9 +823,11 @@
 }
 
 .tt3 {
-  font-size: 40px;
+  font-size: 30px;
+  font-weight: 400;
   text-align: center;
   margin-top: 500px;
+  margin-bottom: 20px;
 }
 
 .container-ig {
@@ -956,6 +959,7 @@
           justify-content: center;
   text-align: center;
   font-size: 20px;
+  font-weight: 500;
   color: #000;
 }
 
@@ -1368,6 +1372,7 @@ input {
           justify-content: center;
   text-align: center;
   font-size: 20px;
+  font-weight: 500;
   color: #000;
 }
 
