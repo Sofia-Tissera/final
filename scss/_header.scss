@@ -5,7 +5,7 @@
     align-items: center;
     height: 65px;
     width: 100vw;
-    padding: 0 10vw;
+    padding: 0 3vw;
     color: #000;
     z-index: 1;
     transition: .4s ease-out;
@@ -39,6 +39,10 @@
 
             &:nth-of-type(4) {
                 transition-delay: .3s;
+            }
+            
+            &:nth-of-type(5) {
+                transition-delay: .4s;
             }
 
             a {

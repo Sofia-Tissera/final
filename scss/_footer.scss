@@ -1,0 +1,112 @@
+.tittle-suscribe {
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    color: #000;
+
+}
+
+input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    margin-left: 28%;
+}
+
+.footer {
+    background-color: #FCCDFF;
+    padding: 70px 0;
+    margin-top: 10px;
+
+    .footer-container {
+        max-width: 1170px;
+        margin: auto;
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .footer-col {
+            width: 25%;
+            padding: 0 15px;
+
+            h4 {
+                font-size: 18px;
+                color: black;
+                text-transform: capitalize;
+                margin-bottom: 30px;
+                font-weight: 500;
+                position: relative;
+            }
+
+            h4::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -10px;
+                background-color: #e91963;
+                height: 2px;
+                box-sizing: border-box;
+                width: 50px;
+            }
+
+            ul li::not(:last-child) {
+                margin-bottom: 10px;
+            }
+
+            ul li a {
+                font-size: 16px;
+                text-transform: capitalize;
+                color: black;
+                text-decoration: none;
+                font-weight: 400;
+                display: block;
+                transition: all 0.3s ease;
+            }
+
+            ul li a:hover {
+                color: #e91963;
+                padding-left: 10px;
+            }
+
+            .social-links a {
+                display: inline-block;
+                height: 48px;
+                width: 48px;
+                background-color: rgba(255, 255, 255, 0.459);
+                margin-right: 5px;
+                margin: 0px 5px 5px 0;
+                text-align: center;
+                line-height: 50px;
+                border-radius: 50%;
+                color: black;
+                transition: all 0.5s ease;
+                font-size: 30px;
+            }
+
+            .social-links a:hover {
+                color: #e91963;
+                background-color: #ffffff;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}

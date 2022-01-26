@@ -1,107 +1,91 @@
-.cami {
-    padding: 80px;
+.container-img {
+    width: 100%;
+    max-width: 120rem;
+    margin: auto;
+    padding: 0 1.5rem;
 
-    .row2 {
-        position: relative;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
+    .img-gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 1.5rem;
+        grid-template-areas:
+            'img-sec2 img-sec3 img-sec4';
 
-        .col3 {
-            position: relative;
+        a {
             width: 100%;
+            height: 35rem;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-            .img2 {
-                position: relative;
-                width: 100%;
-                // min-height: 300px;
-                height: 100%;
-
-                img {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-
-                }
-            }
         }
 
-        .col4 {
-            position: relative;
+        a::before {
+            content: '';
+            position: absolute;
             width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, .8);
+            opacity: 0;
+            transition: opacity .5s;
 
-            .img3 {
-                position: relative;
-                width: 100%;
-                // min-height: 300px;
-                height: 100%;
 
-                img {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-            }
         }
 
-        .col5 {
+        a:hover i,
+        a:hover::before {
+            opacity: 1;
+        }
+
+        i {
+            // color: rgba(255, 355, 255, .6);
             position: relative;
-            width: 100%;
-
-            .img4 {
-                position: relative;
-                width: 100%;
-                height: 100%;
-
-                img {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-            }
+            z-index: 100;
+            padding: 1rem 3rem;
+            border: 2px solid #FACCFF;
+            border-radius: .4rem;
+            opacity: 0;
+            transition: opacity .5s;
         }
     }
-}
 
-@media only screen and (max-width: 767px) {
+    .img-sec2 {
+        grid-area: img-sec2;
+        background-image: url(../img/animalcake.jpeg);
+    }
 
-    .cami {
-        display: flex;
-        width: 100%;
-        padding: 10px;
-        .row2 {
-            position: relative;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
+    .img-sec3 {
+        grid-area: img-sec3;
+        background-image: url(../img/cami.jpg);
+    }
 
-            .col3 {
-                position: relative;
-                width: 100%;
-                height: 100%;
-                margin-top: 20px;
-            }
-            .col4 {
-                position: relative;
-                width: 100%;
-                height: 100%;
-                margin-top: 20px;
-            }
-            .col5 {
-                position: relative;
-                width: 100%;
-                height: 100%;
-                margin-top: 20px;
-            }
+    .img-sec4 {
+        grid-area: img-sec4;
+        background-image: url(../img/mcrviolet.jpeg);
+    }
+
+    @media screen and (max-width: 900px) {
+        .img-gallery {
+            grid-template-areas:
+                'img-sec2 img-sec3 img-sec4';
+
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .img-gallery {
+            grid-template-areas:
+                'img-sec2 img-sec2 img-sec2'
+                'img-sec3 img-sec3 img-sec3'
+                'img-sec4 img-sec4 img-sec4';
+
         }
     }
 }
