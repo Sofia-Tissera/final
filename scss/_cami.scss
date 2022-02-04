@@ -1,7 +1,7 @@
 .container-img {
     width: 100%;
     max-width: 120rem;
-    margin: auto;
+    margin-top: 1.5rem;
     padding: 0 1.5rem;
 
     .img-gallery {
@@ -48,7 +48,7 @@
             position: relative;
             z-index: 100;
             padding: 1rem 3rem;
-            border: 2px solid #FACCFF;
+            border: 2px solid #FADEE1;
             border-radius: .4rem;
             opacity: 0;
             transition: opacity .5s;
