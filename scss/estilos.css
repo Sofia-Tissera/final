@@ -4,7 +4,7 @@
   width: 100vw;
   position: relative;
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: initial;
   background-image: url(../img/bgcake.jpeg);
 }
 
@@ -993,6 +993,101 @@ input {
   .footer-col {
     width: 100%;
   }
+}
+
+aside {
+  width: 100%;
+  min-width: 75rem;
+  text-align: center;
+  padding-top: 30px;
+  padding: 70px;
+  background-image: url(../img/marmol.jpg);
+}
+
+aside h2 {
+  margin-top: 80px;
+  font-size: 30px;
+}
+
+aside .container-testimonios {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+
+aside .container-testimonios .testimonios {
+  width: 21.25rem;
+  margin: 20px;
+  background: rgba(201, 147, 158, 0.492);
+  padding: 20px;
+  text-align: center;
+}
+
+aside .container-testimonios .testimonios h3 {
+  margin-top: -40px;
+  font-size: 20px;
+}
+
+aside .container-testimonios .testimonios h5 {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+aside .container-testimonios .testimonios p {
+  margin-top: 10px;
+}
+
+aside .container-testimonios .testimonios .photo-perfil1,
+aside .container-testimonios .testimonios .photo-perfil2,
+aside .container-testimonios .testimonios .photo-perfil3 {
+  margin: auto;
+  width: 130px;
+  height: 130px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  position: relative;
+  top: -60px;
+}
+
+aside .container-testimonios .testimonios .photo-perfil1 {
+  background-image: url(../img/Mirtha.jpg);
+  background-size: cover;
+}
+
+aside .container-testimonios .testimonios .photo-perfil2 {
+  background-image: url(../img/Claudio.jpg);
+  background-size: cover;
+}
+
+aside .container-testimonios .testimonios .photo-perfil3 {
+  background-image: url(../img/Micaela.jpg);
+  background-size: cover;
+}
+
+aside .container-testimonios .testimonios .container-redes {
+  margin-top: 20px;
+}
+
+aside .container-testimonios .testimonios .container-redes label {
+  font-size: 40px;
+}
+
+aside .container-testimonios .testimonios .container-redes .ion-logo-facebook {
+  color: #0148ba;
+}
+
+aside .container-testimonios .testimonios .container-redes .ion-logo-instagram {
+  color: #ff12c4;
+}
+
+aside .container-testimonios .testimonios .container-redes .ion-logo-twitter {
+  color: #007bc7;
 }
 
 *,
