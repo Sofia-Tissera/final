@@ -1,90 +1,17 @@
 .container-img {
     width: 100%;
-    max-width: 120rem;
-    margin-top: 1.5rem;
-    padding: 0 1.5rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     .img-gallery {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        grid-gap: 1.5rem;
-        grid-template-areas:
-            'img-sec2 img-sec3 img-sec4';
-
-        a {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 30px;
+        
+        img {
             width: 100%;
-            height: 35rem;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-        }
-
-        a::before {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            background-color: rgba(0, 0, 0, .8);
-            opacity: 0;
-            transition: opacity .5s;
-
-
-        }
-
-        a:hover i,
-        a:hover::before {
-            opacity: 1;
-        }
-
-        i {
-            position: relative;
-            z-index: 100;
-            padding: 1rem 3rem;
-            border: 2px solid #FADEE1;
-            border-radius: .4rem;
-            opacity: 0;
-            transition: opacity .5s;
-        }
-    }
-
-    .img-sec2 {
-        grid-area: img-sec2;
-        background-image: url(../img/animalcake.jpg);
-    }
-
-    .img-sec3 {
-        grid-area: img-sec3;
-        background-image: url(../img/cami.jpg);
-    }
-
-    .img-sec4 {
-        grid-area: img-sec4;
-        background-image: url(../img/mcrviolet.jpeg);
-    }
-
-    @media screen and (max-width: 900px) {
-        .img-gallery {
-            grid-template-areas:
-                'img-sec2 img-sec3 img-sec4';
-
-        }
-    }
-
-    @media screen and (max-width: 600px) {
-        .img-gallery {
-            grid-template-areas:
-                'img-sec2 img-sec2 img-sec2'
-                'img-sec3 img-sec3 img-sec3'
-                'img-sec4 img-sec4 img-sec4';
-
         }
     }
 }
