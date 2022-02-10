@@ -510,13 +510,139 @@ aside {
         aside .container-testimonios .testimonios .container-redes .ion-logo-twitter {
           color: #007bc7; }
 
+.contact {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url(../img/contactBg.png);
+  background-size: cover; }
+  .contact .content-1 {
+    max-width: 800px;
+    text-align: center; }
+    .contact .content-1 h2 {
+      font-size: 40px;
+      font-weight: 500;
+      color: #fff; }
+    .contact .content-1 p {
+      font-weight: 300;
+      color: #fff; }
+    .contact .content-1 .container-c {
+      width: 100%;
+      display: flex;
+      justify-content: left;
+      align-items: left;
+      margin-top: 30px; }
+      .contact .content-1 .container-c .contactInfo {
+        width: 50%;
+        display: flex;
+        flex-direction: column; }
+        .contact .content-1 .container-c .contactInfo h3 {
+          font-size: 27px;
+          font-weight: 500;
+          color: #e91963; }
+        .contact .content-1 .container-c .contactInfo .box {
+          position: relative;
+          padding: 20px 0;
+          display: flex; }
+          .contact .content-1 .container-c .contactInfo .box .icon {
+            min-width: 40px;
+            height: 40px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 22px;
+            margin-top: 25px; }
+          .contact .content-1 .container-c .contactInfo .box .text {
+            display: flex;
+            text-align: left;
+            margin-left: 10px;
+            font-size: 16px;
+            color: #fff;
+            flex-direction: column;
+            font-weight: 300; }
+
+@media (max-width: 991px) {
+  .contact {
+    padding: 50px; }
+    .contact .container-c {
+      flex-direction: column; }
+      .contact .container-c .contactInfo {
+        margin-bottom: 40px; }
+      .contact .container-c .contactInfo,
+      .contact .container-c .form {
+        width: 100%; } }
+
+.form {
+  width: 60%;
+  height: auto;
+  padding: 40px;
+  background: #fff; }
+  .form h2 {
+    position: relative;
+    font-size: 22px;
+    color: #333;
+    font-weight: 500;
+    height: auto;
+    z-index: 2; }
+  .form .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px; }
+    .form .inputBox input {
+      width: 100%;
+      padding: 5px 0;
+      font-size: 16px;
+      margin: 7px 0;
+      border: none;
+      border-bottom: 1px solid #333;
+      outline: none;
+      resize: none; }
+    .form .inputBox textarea {
+      width: 100%;
+      padding: 5px 0;
+      font-size: 16px;
+      margin: 7px 0;
+      border: none;
+      border-bottom: 1px solid #333;
+      outline: none;
+      resize: none; }
+    .form .inputBox span {
+      position: absolute;
+      left: 0px;
+      padding: 5px 0;
+      font-size: 16px;
+      margin: 10px 0;
+      pointer-events: none;
+      transition: 0.5s;
+      color: #666; }
+    .form .inputBox input:focus ~ span,
+    .form .inputBox input:valid ~ span,
+    .form .inputBox textarea:focus ~ span,
+    .form .inputBox textarea:valid ~ span {
+      color: #e91e63;
+      font-size: 12px;
+      transform: translateY(-20px); }
+    .form .inputBox input[type="submit"] {
+      width: 100px;
+      background: #e91963;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      font-size: 18px; }
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
-  scroll-behavior: smooth; }
+  padding: 0; }
 
 body {
   font-family: 'Poppins', sans-serif;

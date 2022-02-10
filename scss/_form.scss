@@ -1,0 +1,77 @@
+.form {
+    width: 60%;
+    height: auto;
+    padding: 40px;
+    background: #fff;
+
+    h2{
+        position: relative;
+        font-size: 22px;
+        color: #333;
+        font-weight: 500;
+        height: auto;
+        z-index: 2;
+    }
+
+    .inputBox {
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+
+        input {
+            width: 100%;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 7px 0;
+            border: none;
+            border-bottom: 1px solid #333;
+            outline: none;
+            resize: none;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 7px 0;
+            border: none;
+            border-bottom: 1px solid #333;
+            outline: none;
+            resize: none;
+
+        }
+
+        span {
+            position: absolute;
+            left: 0px;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            pointer-events: none;
+            transition: 0.5s;
+            color: #666;
+        }
+
+        input:focus~span,
+        input:valid~span,
+        textarea:focus~span,
+        textarea:valid~span {
+            color: #e91e63;
+            font-size: 12px;
+            transform: translateY(-20px);
+
+        }
+
+        input[type="submit"] {
+            width: 100px;
+            background: #e91963;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+    }
+}
+
