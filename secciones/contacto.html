@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../css/materialize.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../css/lightbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <title>Camila Ferlatti | bienvenidos</title>
 </head>
 
@@ -43,59 +44,51 @@
             </li>
         </ul>
     </header>
-    <main>
-        <section class="contact">
-            <div class="content-1">
-                <h2>Contactame</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptas doloremque totam
-                    obcaecati aspernatur, odit cum itaque reiciendis in aliquam!</p>
-                <div class="container-c">
-                    <div class="contactInfo">
-                        <div class="box">
-                            <div class="icon"><i class="ion-ios-map" aria-hidden="true"></i></div>
-                            <div class="text">
-                                <h3>Dirección</h3>
-                                <p>Av. Mitre 4473,<br>Quilmes,<br>Buenos aires</p>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="icon"><i class="ion-md-phone-portrait" aria-hidden="true"></i></div>
-                            <div class="text">
-                                <h3>Teléfono</h3>
-                                <p>1122345678</p>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="icon"><i class="ion-md-mail" aria-hidden="true"></i></div>
-                            <div class="text">
-                                <h3>Email</h3>
-                                <p>camilaferlatti.info@gmail.com</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="form">
-                    <form>
-                        <h2>Enviar mensaje</h2>
-                        <div class="inputBox">
-                            <input type="text" name="" required="required">
-                            <span>Nombre</span>
-                        </div>
-                        <div class="inputBox">
-                            <input type="text" name="" required="required">
-                            <span>Email</span>
-                        </div>
-                        <div class="inputBox">
-                            <textarea required="required"></textarea>
-                            <span>Dejame tu mensaje...</span>
-                        </div>
-                        <div class="inputBox">
-                            <input type="submit" name="" value="Enviar">
-                        </div>
+    <main class="cont">
+        <div class="content">
+            <div class="contact-wrapper animated bounceInUp">
+                <div class="contact-form">
+                    <h3>Contacto</h3>
+                    <form action="">
+                        <p>
+                            <label>Nombre y apellido</label>
+                            <input type="text" name="fullname">
+                        </p>
+                        <p>
+                            <label>Email</label>
+                            <input type="email" name="email">
+                        </p>
+                        <p>
+                            <label>Teléfono</label>
+                            <input type="tel" name="phone">
+                        </p>
+                        <p>
+                            <label>Asunto</label>
+                            <input type="text" name="affair">
+                        </p>
+                        <p class="block">
+                            <label>Mensaje</label>
+                            <textarea name="message" rows="3"></textarea>
+                        </p>
+                        <p class="block">
+                            <button>
+                                Enviar
+                            </button>
+                        </p>
                     </form>
                 </div>
+                <div class="contact-info">
+                    <h4>Mas info</h4>
+                    <ul>
+                        <li><i class="ion-ios-map"></i> Av. Mitre</li>
+                        <li><i class="ion-md-phone-portrait"></i> 11-2345-6789</li>
+                        <li><i class="ion-md-mail"></i> cferlatti.info@gmail.com</li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                    <p>ferlatti.com.ar</p>
+                </div>
             </div>
-        </section>
+
         </div>
     </main>
 
