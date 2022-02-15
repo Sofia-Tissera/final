@@ -1,0 +1,87 @@
+.main-serv {
+    background-color: #faede9;
+
+    .menu {
+        padding: 0 10px 30px 10px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-gap: 20px 40px;
+
+        .pastry-items {
+            display: grid;
+            position: relative;
+            grid-template-rows: auto 1fr;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+
+            img {
+                position: relative;
+                width: 100%;
+                border-radius: 15px 15px 0 0;
+            }
+
+            .det {
+                padding: 20px 10px;
+                display: grid;
+                grid-template-rows: auto 1fr 50px;
+                grid-row-gap: 15px;
+    
+                .det-sub {
+                    display: grid;
+                    grid-template-columns: auto auto;
+    
+                    h5 {
+                        font-weight: 600;
+                        font-size: 18px;
+                    }
+    
+                    .price {
+                        text-align: right;
+                    }
+                }
+    
+                p {
+                    color: #6f6f6f;
+                    font-style: 15px;
+                    line-height: 28px;
+                    font-weight: 400;
+                    align-self: stretch;
+                }
+    
+                button {
+                    background-color: #d67fbc;
+                    border: none;
+                    color: #ffffff;
+                    font-size: 16px;
+                    font-weight: 600;
+                    border-radius: 5px;
+                    width: 180px;
+                }
+            }
+
+        }
+    }
+
+    .heading {
+        background-color: pink;
+        color: rgb(24, 24, 24);
+        margin-bottom: 10px;
+        padding: 30px 0;
+        grid-column: 1/-1;
+        text-align: center;
+
+        h2 {
+            font-weight: 400;
+            font-size: 30px;
+            margin-bottom: 10px;
+            grid-column: 1/-1;
+            text-align: center;
+        }
+
+        h4 {
+            font-weight: 600;
+            font-size: 22px;
+            letter-spacing: 5px;
+        }     
+    }
+}

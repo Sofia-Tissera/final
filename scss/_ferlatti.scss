@@ -1,70 +1,67 @@
 .bg-port {
     height: 100vh;
-    width: 100vw;
-    position: relative;
+    background: url(../img/bgcake.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-    background-position: initial;
-    background-image: url(../img/bgcake.jpeg);
+    background-attachment: fixed;
 
     .overlay {
         position: absolute;
         height: 100%;
         width: 100%;
-        background: rgbs(0,0,0,0.5);
+        background: rgbs(0, 0, 0, 0.5);
         color: white;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-    }
-}
 
+        .ferlatti {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 10vw;
+            color: #fff;
 
+            h1 {
+                position: relative;
+                font-size: 6rem;
+                text-transform: uppercase;
+                text-align: center;
+                background: rgba(0, 0, 0, 0.2);
+                padding: 3rem;
+                border-radius: 1.25rem 0;
 
+                span {
+                    font-size: 2rem;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    text-align: center;
+                    padding: 2rem;
 
-.ferlatti {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 10vw;
-    color: #fff;
+                }
 
-    h1 {
-        position: relative;
-        font-size: 4rem;
-        text-transform: uppercase;
-        text-align: center;
-        background: rgba(0, 0, 0, 0.2);
-        padding: 3rem;
-        border-radius: 1.25rem 0;
+                &::before,
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    height: 100%;
+                    width: 50%;
+                }
 
-        span {
-            font-size: 1.5rem;
-            font-weight: 300;
-            text-transform: uppercase;
-            text-align: center;
-            padding: 2rem;
+                &::before {
+                    left: 0;
+                    border-bottom: 0.1875rem solid #FADEE1;
+                }
 
-        }
-
-        &::before,
-        &::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            height: 100%;
-            width: 50%;
-        }
-
-        &::before {
-            left: 0;
-            border-bottom: 0.1875rem solid #FADEE1;
-        }
-
-        &::after {
-            right: 0;
-            border-top: 0.1875rem solid #FADEE1;
+                &::after {
+                    right: 0;
+                    border-top: 0.1875rem solid #FADEE1;
+                }
+            }
         }
     }
 }
