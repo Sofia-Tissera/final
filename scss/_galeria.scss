@@ -8,7 +8,7 @@
         margin: 0 auto;
         padding: 50px 20px;
         display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         grid-auto-rows: 250px;
         grid-auto-flow: dense;
         grid-gap: 20px;
@@ -70,7 +70,7 @@
                 }
             }
         }
-        
+
 
         .image-box:hover img {
             transform: scale(1.1);
@@ -106,13 +106,13 @@
 
     @media (max-width:768px) {
         .image-gallery {
-            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             grid-auto-rows: 250px;
 
             .image-box:nth-child(7n+1) {
                 grid-column: unset;
                 grid-row: unset;
             }
-        }    
+        }
     }
 }

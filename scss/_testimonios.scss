@@ -27,7 +27,7 @@ aside {
             padding: 20px;
             text-align: center;
             box-shadow: 0px 0px 30px -6px black;
-          
+
 
             h3 {
                 margin-top: -40px;
@@ -53,7 +53,7 @@ aside {
                 margin: auto;
                 width: 130px;
                 height: 130px;
-                background-position: center ;
+                background-position: center;
                 background-size: cover;
                 border-radius: 50%;
                 position: relative;
@@ -65,10 +65,12 @@ aside {
                 background-image: url(../img/Mirtha.jpg);
                 background-size: cover;
             }
+
             .photo-perfil2 {
                 background-image: url(../img/Claudio.jpg);
                 background-size: cover;
             }
+
             .photo-perfil3 {
                 background-image: url(../img/Micaela.jpg);
                 background-size: cover;
@@ -84,15 +86,15 @@ aside {
                 .ion-logo-facebook {
                     color: #0148ba;
                 }
+
                 .ion-logo-instagram {
                     color: #ff12c4;
                 }
+
                 .ion-logo-twitter {
                     color: #007bc7;
                 }
             }
         }
     }
-
-
 }

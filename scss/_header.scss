@@ -14,12 +14,12 @@
         font-weight: 800;
         font-size: 1.875rem;
         padding: auto;
-    }
 
-    a {
-        text-decoration: none;
-        color: inherit;
-        text-transform: uppercase;
+        a {
+            text-decoration: none;
+            color: inherit;
+            text-transform: uppercase;
+        }
     }
 
     .nav-links {
@@ -44,7 +44,7 @@
             &:nth-of-type(4) {
                 transition-delay: .3s;
             }
-            
+
             &:nth-of-type(5) {
                 transition-delay: .4s;
             }
@@ -56,6 +56,29 @@
 
             a:hover {
                 background: rgba(255, 255, 255, 0.529);
+            }
+
+            a {
+                text-decoration: none;
+                color: inherit;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .menu-btn {
+        position: absolute;
+        top: -6.25rem;
+
+        &:focus~.menu-icon {
+            .menu-icon__line {
+                &::before {
+                    transform: translateY(-0.4375rem);
+                }
+
+                &::after {
+                    transform: translateY(0.4375rem);
+                }
             }
         }
     }
@@ -93,23 +116,6 @@
 
             &::after {
                 transform: translateY(0.3125rem);
-            }
-        }
-    }
-
-    .menu-btn {
-        position: absolute;
-        top: -6.25rem;
-
-        &:focus~.menu-icon {
-            .menu-icon__line {
-                &::before {
-                    transform: translateY(-0.4375rem);
-                }
-
-                &::after {
-                    transform: translateY(0.4375rem);
-                }
             }
         }
     }
